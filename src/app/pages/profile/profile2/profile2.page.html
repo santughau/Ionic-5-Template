@@ -1,0 +1,79 @@
+<ion-content>
+  <div class="main_content_div">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+
+    <div class="user_div">
+      <div class="first_div">
+        <ion-label class="username">Yamini</ion-label>
+      </div>
+      <div class="user_back" [style.backgroundImage]="'url(assets/14.jpg)'"></div>
+    </div>
+
+    <div class="content_div">
+      <div class="test_detail">
+        <ion-grid fixed>
+          <ion-row>
+            <ion-col size="6">
+              <div class="flex_div">
+                <div class="round_div">
+                  <img src="../../../../assets/idea.png">
+                </div>
+
+                <div class="details">
+                  <ion-label class="bold_lbl">100</ion-label>
+                  <ion-label class="small_lbl">Attempt</ion-label>
+                </div>
+              </div>
+            </ion-col>
+            <ion-col size="6">
+              <div class="flex_div">
+                <div class="round_div">
+                  <img src="../../../../assets/clock.png">
+                </div>
+
+                <div class="details">
+                  <ion-label class="bold_lbl">2Hr 10 Min</ion-label>
+                  <ion-label class="small_lbl">Time</ion-label>
+                </div>
+              </div>
+            </ion-col>
+            <ion-col size="6">
+              <div class="flex_div">
+                <div class="round_div">
+                  <img src="../../../../assets/speed.png">
+                </div>
+
+                <div class="details">
+                  <ion-label class="bold_lbl">70Q/Hr</ion-label>
+                  <ion-label class="small_lbl">Speed</ion-label>
+                </div>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+
+      <div class="list_div">
+        <ion-label>Edit Profile</ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+
+      <div class="list_div">
+        <ion-label>Test List</ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+
+      <div class="list_div">
+        <ion-label>Faviourite Books</ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+
+      <div class="list_div">
+        <ion-label>Log Out</ion-label>
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
+</ion-content>

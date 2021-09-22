@@ -1,0 +1,51 @@
+<ion-header>
+  <div class="grad_back">
+    <div class="btn_flex">
+      <div>
+        <ion-buttons slot="start">
+          <ion-back-button mode="md" defaultHref="/home" color="light"></ion-back-button>
+        </ion-buttons>
+      </div>
+
+      <div>
+        <ion-button fill="serach" size="small">
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-button>
+
+        <ion-button fill="serach" size="small">
+          <ion-icon name="notifications-outline"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+
+    <ion-label class="subject">Select Chapter</ion-label>
+  </div>
+
+  <ion-segment value="Tests" mode="md" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="Chapters">
+      <ion-label>Chapters</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="Tests">
+      <ion-label>Tests</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+</ion-header>
+
+<ion-content>
+  <div class="main_content_div">
+    <span *ngIf="segId == 'Chapters'"></span>
+    <span *ngIf="segId == 'Tests'">
+      <div class="card_div" *ngFor="let item of chapters">
+        <div class="round_div">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+        </div>
+
+        <div class="content_div">
+          <ion-label class="title_lbl">{{item.name}}</ion-label>
+          <ion-label class="small_lbl">Solve All Questions</ion-label>
+        </div>
+      </div>
+    </span>
+  </div>
+</ion-content>
