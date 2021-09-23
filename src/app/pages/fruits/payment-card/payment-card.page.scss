@@ -1,0 +1,61 @@
+.toolbar{
+    height:84px;
+    --background:#69A03A;
+    color:#fff;
+    font-size: 20px;
+    line-height:84px;
+    #userIcon{
+        color:#fff;
+        font-size:2.5rem;
+        margin-right:10px;
+    }
+}
+
+.container{
+    width:100%;
+    padding:20px;
+    .img{
+        margin:auto !important;
+        width:100%;
+    }
+    
+    .lbl{
+        color:#69A03A;
+        font-size: 20px;
+    }
+    ion-input{
+        border:1px solid gray;
+        margin-top:10px;
+        min-height:45px !important;
+        padding-left:20px !important;
+        border-radius: 5px;
+        --placeholder-color:#69A03A !important;       
+        
+    }
+    
+    ion-checkbox{
+        width:45px;
+        height:45px;
+        margin-top:10px;
+        float:left;
+    }
+
+    .cvv_lbl{
+         color:#69A03A;
+        font-size: 20px;
+        float: left;
+        margin-top:20px;
+        margin-left:20px;
+    }
+.btn{
+    width:100%;
+    padding:10px 20px;
+    font-size: 20px;
+    background-color:#69A03A;
+    color:#fff;
+    
+
+}
+    
+}
+

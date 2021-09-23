@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+ion-content{
+    --background: #f1f5f9;
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    .header{
+        background-color: #FF6EA1;
+        height: 100px;
+        box-shadow: 2px 2px 5px rgb(0 0 0 / 20%);
+        .back_btn{
+            font-size: 30px;
+            left:16px;
+            top:40px;
+            position: absolute;
+        }
+        ion-label{
+            position: absolute;
+            top:40px;
+            left:55px;
+            color:#fff;
+            font-size:25px;
+        }
+    }
+    .profile{
+        position: absolute;
+        top:50px;
+        right:25px;
+        img{
+            border-radius: 50%;
+            width:100px;
+            height:100px;
+        }        
+    }
+    .editProfile{
+        position: absolute;
+        top:160px;
+        right:25px;
+        .profileBtn{           
+            padding:10px 20px;
+            border:1px solid #FF6EA1;
+            background: rgba(255,110,161,0.09);
+            color:#FF6EA1
+        }
+    }
+    .statics{
+        width:70%;
+        margin-top:30px;
+        margin-left: 20px;
+        .staticsNumber{
+            font-size: 30px;
+            color:#FF6EA1;            
+        }
+        .staticsText{
+             font-size: 10px;
+            color:gray;
+            margin-top:-10px;
+        }
+    }
+    .account{
+        padding:20px;
+       
+        .accountDiv{
+            background:#fff;
+            width:100%;
+            height:100px;
+             margin-top:10px;
+             ion-icon{
+                 color:#FF6EA1;
+             }
+        }
+    }
+}
+}

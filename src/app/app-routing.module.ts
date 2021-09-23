@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'demo2',
+    redirectTo: 'payment-card',
     pathMatch: 'full'
   },
   {
@@ -163,6 +163,30 @@ const routes: Routes = [
   {
     path: 'demo2',
     loadChildren: () => import('./pages/demo/demo2/demo2.module').then( m => m.Demo2PageModule)
+  },
+  {
+    path: 'demo3',
+    loadChildren: () => import('./pages/demo3/demo3.module').then( m => m.Demo3PageModule)
+  },
+  {
+    path: 'detail',
+    loadChildren: () => import('./pages/fruits/detail/detail.module').then( m => m.DetailPageModule)
+  },
+  {
+    path: 'my-orders',
+    loadChildren: () => import('./pages/fruits/my-orders/my-orders.module').then( m => m.MyOrdersPageModule)
+  },
+  {
+    path: 'favourites',
+    loadChildren: () => import('./pages/fruits/favourites/favourites.module').then( m => m.FavouritesPageModule)
+  },
+  {
+    path: 'shopping-cart',
+    loadChildren: () => import('./pages/fruits/shopping-cart/shopping-cart.module').then( m => m.ShoppingCartPageModule)
+  },
+  {
+    path: 'payment-card',
+    loadChildren: () => import('./pages/fruits/payment-card/payment-card.module').then( m => m.PaymentCardPageModule)
   }
 ];
 

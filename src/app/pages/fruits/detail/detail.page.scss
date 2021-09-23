@@ -1,0 +1,34 @@
+.toolbar{
+    height:84px;
+    --background:#69A03A;
+    color:#fff;
+    font-size: 20px;
+    line-height:84px;
+}
+
+ion-content{
+    img{
+        border-radius:15px;
+    }
+    .main_container{
+        ion-label{
+            color:gray;
+            font-weight: 600;
+        }
+        .grapesPara{
+            text-align: justify;
+        }
+    }
+}
+ion-footer{
+    .headingClass{
+        margin-left:20px;
+        color:#69A03A;
+    }
+    .btn{
+        background:#69A03A;
+        padding:10px 20px;
+        margin-top: 40px !important;
+        color:#fff;
+    }
+}
