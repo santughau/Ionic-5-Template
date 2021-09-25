@@ -1,0 +1,189 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start" class="menu_btn">
+      <ion-menu-button color="light" defaultHref="home1"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Fruit Market</ion-title>
+    <ion-icon name="notifications" slot="end"></ion-icon>
+  </ion-toolbar>
+  <ion-searchbar placeholder="Search Fruits & Vegetabels"></ion-searchbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-segment scrollable value="heart">
+    <ion-segment-button value="home">
+      <ion-label>Vegetables</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="heart">
+      <ion-label>Fruits</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="pin">
+      <ion-label>Dry Fruits</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="main_div">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-label>Organic Fruits <span>( 20 % Off )</span></ion-label>
+          <p>Pick Up From Organic Forms</p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size=12>
+          <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide>
+              <div>
+                <div class="img" style=" background:url('../../../../assets/apple.jfif');"></div>
+                <div class="iconLove">
+                  <ion-icon name="heart" color="danger"></ion-icon>
+                </div>
+                <div>
+                  <div>Apples</div>
+                  <div>Rs 300Per/Kg</div>
+                </div>
+              </div>
+            </ion-slide>
+            <ion-slide>
+              <div>
+                <div class="img" style=" background:url('../../../../assets/orange.jfif');"></div>
+                <div class="iconLove">
+                  <ion-icon name="heart" color="danger"></ion-icon>
+                </div>
+                <div>
+                  <div>Orange</div>
+                  <div>Rs 300Per/Kg</div>
+                </div>
+              </div>
+            </ion-slide>
+
+            <ion-slide>
+              <div>
+                <div class="img" style=" background:url('../../../../assets/tomato.jpg');"></div>
+                <div class="iconLove">
+                  <ion-icon name="heart" color="danger"></ion-icon>
+                </div>
+                <div>
+                  <div>Tomato</div>
+                  <div>Rs 300Per/Kg</div>
+                </div>
+              </div>
+            </ion-slide>
+
+            <ion-slide>
+              <div>
+                <div class="img" style=" background:url('../../../../assets/bringle.png');"></div>
+                <div class="iconLove">
+                  <ion-icon name="heart" color="danger"></ion-icon>
+                </div>
+                <div>
+                  <div>Bringle</div>
+                  <div>Rs 300Per/Kg</div>
+                </div>
+              </div>
+            </ion-slide>
+
+            <ion-slide>
+              <div>
+                <div class="img" style=" background:url('../../../../assets/brocolli.jfif');"></div>
+                <div class="iconLove">
+                    <ion-icon name="heart" color="danger"></ion-icon>
+                </div>
+                <div>
+                  <div>Brocolli</div>
+                  <div>Rs 300Per/Kg</div>
+                </div>
+              </div>
+            </ion-slide>
+
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+    
+      <ion-row > 
+        <ion-col>
+          <ion-label>Mixed Fruits <span>( 10 % Off )</span></ion-label>
+          <p>Fruit Mix With Fresh Pack</p>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size=12>
+          <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide>
+              <div>
+                <div class="img" style=" background:url('../../../../assets/apple.jfif');"></div>
+                <div class="iconLove">
+                  <ion-icon name="heart" color="danger"></ion-icon>
+                </div>
+                <div>
+                  <div>Apples</div>
+                  <div>Rs 300Per/Kg</div>
+                </div>
+              </div>
+            </ion-slide>
+            <ion-slide>
+              <div>
+                <div class="img" style=" background:url('../../../../assets/orange.jfif');"></div>
+                <div class="iconLove">
+                  <ion-icon name="heart" color="danger"></ion-icon>
+                </div>
+                <div>
+                  <div>Orange</div>
+                  <div>Rs 300Per/Kg</div>
+                </div>
+              </div>
+            </ion-slide>
+    
+            <ion-slide>
+              <div>
+                <div class="img" style=" background:url('../../../../assets/tomato.jpg');"></div>
+                <div class="iconLove">
+                  <ion-icon name="heart" color="danger"></ion-icon>
+                </div>
+                <div>
+                  <div>Tomato</div>
+                  <div>Rs 300Per/Kg</div>
+                </div>
+              </div>
+            </ion-slide>
+    
+            <ion-slide>
+              <div>
+                <div class="img" style=" background:url('../../../../assets/bringle.png');"></div>
+                <div class="iconLove">
+                  <ion-icon name="heart" color="danger"></ion-icon>
+                </div>
+                <div>
+                  <div>Bringle</div>
+                  <div>Rs 300Per/Kg</div>
+                </div>
+              </div>
+            </ion-slide>
+    
+            <ion-slide>
+              <div>
+                <div class="img" style=" background:url('../../../../assets/brocolli.jfif');"></div>
+                <div class="iconLove">
+                  <ion-icon name="heart" color="danger"></ion-icon>
+                </div>
+                <div>
+                  <div>Brocolli</div>
+                  <div>Rs 300Per/Kg</div>
+                </div>
+              </div>
+            </ion-slide>
+    
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+
+    
+    </ion-grid>
+
+  
+  </div>
+</ion-content>

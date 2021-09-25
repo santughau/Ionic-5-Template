@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-next2',
@@ -10,7 +11,7 @@ export class Next2Page implements OnInit {
   slideOpts = {
     slidesPerView: 1.5
   }
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit() {
     this.students = [
@@ -37,6 +38,6 @@ export class Next2Page implements OnInit {
     ];
   }
   goBack() {
-
+    this._router.navigate(['/home1']);
   }
 }

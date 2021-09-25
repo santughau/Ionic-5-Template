@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'payment-card',
+    redirectTo: 'code-verification',
     pathMatch: 'full'
   },
   {
@@ -187,6 +187,18 @@ const routes: Routes = [
   {
     path: 'payment-card',
     loadChildren: () => import('./pages/fruits/payment-card/payment-card.module').then( m => m.PaymentCardPageModule)
+  },
+  {
+    path: 'fruit-market',
+    loadChildren: () => import('./pages/fruits/fruit-market/fruit-market.module').then( m => m.FruitMarketPageModule)
+  },
+  {
+    path: 'verification-code',
+    loadChildren: () => import('./pages/fruits/verification-code/verification-code.module').then( m => m.VerificationCodePageModule)
+  },
+  {
+    path: 'code-verification',
+    loadChildren: () => import('./pages/fruits/code-verification/code-verification.module').then( m => m.CodeVerificationPageModule)
   }
 ];
 

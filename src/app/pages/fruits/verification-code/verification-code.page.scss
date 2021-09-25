@@ -1,0 +1,25 @@
+ion-toolbar{   
+    --background:#69A03A;
+    color:#fff;
+    font-size: 20px;
+    line-height:84px;
+    
+}
+
+
+ion-content{
+    .main_div{
+        text-align: center;
+        ion-icon{
+        margin-top:100px;
+        font-size: 150px;
+        color: #69A03A;   
+        --ionicon-stroke-width: 12px;     
+        }
+        p{
+            color: #69A03A;      
+        }
+        
+
+    }
+}
