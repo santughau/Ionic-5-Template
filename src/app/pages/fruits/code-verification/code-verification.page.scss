@@ -1,19 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 ion-toolbar{   
     --background:#69A03A;
     color:#fff;
     font-size: 20px;
     line-height:84px;
+    font-family: 'Poppins', sans-serif;
     
 }
 
 
 ion-content{
+    font-family: 'Poppins', sans-serif;
+    margin:20px !important;
+    
     .main_div{
         text-align: center;
         margin-top:50px;
-        
         p{
-            color: #69A03A;      
+            color: #69A03A;  
+            margin-left:10px;   
+            margin-right:10px;   
         }
         .numberBox{
             display: flex;
@@ -28,7 +35,7 @@ ion-content{
                 margin:20px; 
                 align-self: center;
                 p{
-                    color:black !important;
+                color:black !important;
                 font-weight:500 !important;
                 font-size:20px;
                 }
@@ -43,7 +50,7 @@ ion-content{
                 font-size: 20px;
             }
             .resend{
-                
+
             }
     }
 }
