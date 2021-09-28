@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'code-verification',
+    redirectTo: 'notification-settings',
     pathMatch: 'full'
   },
   {
@@ -199,6 +199,10 @@ const routes: Routes = [
   {
     path: 'code-verification',
     loadChildren: () => import('./pages/fruits/code-verification/code-verification.module').then( m => m.CodeVerificationPageModule)
+  },
+  {
+    path: 'notification-settings',
+    loadChildren: () => import('./pages/fruits/notification-settings/notification-settings.module').then( m => m.NotificationSettingsPageModule)
   }
 ];
 
