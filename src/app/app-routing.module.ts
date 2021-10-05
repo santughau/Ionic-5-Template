@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'notification-settings',
+    redirectTo: 'menu-page',
     pathMatch: 'full'
   },
   {
@@ -203,6 +203,22 @@ const routes: Routes = [
   {
     path: 'notification-settings',
     loadChildren: () => import('./pages/fruits/notification-settings/notification-settings.module').then( m => m.NotificationSettingsPageModule)
+  },
+  {
+    path: 'notification-page',
+    loadChildren: () => import('./pages/fruits/notification-page/notification-page.module').then( m => m.NotificationPagePageModule)
+  },
+  {
+    path: 'account-setting',
+    loadChildren: () => import('./pages/fruits/account-setting/account-setting.module').then( m => m.AccountSettingPageModule)
+  },
+  {
+    path: 'menu-page',
+    loadChildren: () => import('./pages/fruits/menu-page/menu-page.module').then( m => m.MenuPagePageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/getfix/login/login.module').then( m => m.LoginPageModule)
   }
 ];
 
