@@ -1,0 +1,100 @@
+<ion-content>
+  <div class="heading">
+    <div class="btn_flex">
+      <div>
+        <ion-buttons slot="start">
+          <ion-menu-button mode="ios" defaultHref="/home1" color="dark"></ion-menu-button>
+          <ion-label>Get <span>Fix</span></ion-label>
+        </ion-buttons>
+      </div>
+    </div>
+
+    <input type="text" placeholder="Search For Services" />
+    <p><a href='#'>Cleaning</a><a href='#'>Plumbing</a><a href='#'>Painter</a><a href='#'>Battery</a></p>
+    <ion-item>
+      <ion-label>
+        <ion-icon name="location-outline"></ion-icon> Service Location near
+      </ion-label>
+      <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+        <ion-select-option value="nanded">Nanded</ion-select-option>
+        <ion-select-option value="degloor">Degloor</ion-select-option>
+        <ion-select-option value="pune">Pune</ion-select-option>
+        <ion-select-option value="mumbai">Mumbai</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <div class="services">
+    <div class="service_names">
+      <img src="../../../../assets/hygine.jpg" />
+      <p>Hygine</p>
+    </div>
+    <div class="service_names">
+      <img src="../../../../assets/electrical.jpg" />
+      <p>Electricals</p>
+    </div>
+    <div class="service_names">
+      <img src="../../../../assets/appliances.jpg" />
+      <p>Appliances</p>
+    </div>
+
+    <div class="service_names">
+      <img src="../../../../assets/plumbing.jpg" />
+      <p>Plumbing</p>
+    </div>
+
+    <div class="service_names">
+      <img src="../../../../assets/acrepair.jpg" />
+      <p>AC Repair</p>
+    </div>
+  </div>
+
+  <div class="banner">
+    <img src="../../../../assets/banner.jfif" />
+  </div>
+
+  <div class="best_offer">
+    <h4>Best Offer</h4>
+    <p>Hygienic & Single-use Products | low-contact Services</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-slides pager="true" [options]="slideOpts">
+            <ion-slide>
+              <div class="slide">
+                <img src="../../../../assets/bath.jpg" />
+                <h3>Computer Repairing</h3>
+                <p>The <b>ionic conference app</b>proper code use.</p>
+              </div>
+            </ion-slide>
+
+            <ion-slide>
+              <div class="slide">
+                <img src="../../../../assets/banner.jfif" />
+                <h3>Computer Repairing</h3>
+                <p>The <b>ionic conference app</b>proper code use.</p>
+              </div>
+            </ion-slide>
+
+            <ion-slide>
+              <div class="slide">
+                <img src="../../../../assets/bath.jpg" />
+                <h3>Computer Repairing</h3>
+                <p>The <b>ionic conference app</b>proper code use.</p>
+              </div>
+            </ion-slide>
+
+            <ion-slide>
+              <div class="slide">
+                <img src="../../../../assets/bath.jpg" />
+                <h3>Computer Repairing</h3>
+                <p>The <b>ionic conference app</b>proper code use.</p>
+              </div>
+            </ion-slide>
+
+          </ion-slides>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

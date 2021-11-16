@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+ion-toolbar{
+    --background:#3e9186;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    ion-segment-button{
+        --color:white;
+        --color-checked:yellow;
+        --indicator-height:5px;
+    }
+}
+
+
+ion-content{
+    --background:#eeeff3;
+    font-family: 'Poppins', sans-serif;
+    .featureBox{
+        .featureId{
+            margin-top:10px !important;
+            margin-left:20px ;
+            span{
+                float:right;
+                margin-right:10px;
+            }
+            
+        }
+
+        .featureImg{
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:-10px;
+            background: #fff;
+            width:calc(100% - (10px+10px));
+
+            img{
+                padding:10px;
+                width:100%;
+            }
+
+            #product{
+                margin-left:20px;
+                margin-top:-10px;
+                font:bold;
+                span{
+                    float:right;
+                    margin-right:10px;
+                    color:#3e9186;
+                }
+            }
+
+            h6{
+                margin-left:20px;
+                margin-right:20px;
+                margin-top:-10px;
+                text-align: justify;
+                color:gray;
+            }
+            .star{
+                display: flex;
+                .starrating{
+                    margin-left:20px;
+                }
+
+                .menu{
+                    ion-icon{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+
+        .category{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top:-10px;
+            .box{
+                height:auto;
+                background-color: #fff;
+                margin:0px 5px 10px 5px;
+                padding:5px;
+                flex:1 1 30%;
+                width:33%;
+                img{
+                    width:100%;
+                }
+                p{
+                    margin-top:-10px;
+                }
+                h6{
+                    margin-top:-20px;
+                    color:#3e9186;
+                    font-size: 14px;
+                    span{
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+}

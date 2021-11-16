@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
+    { title: 'Material Theme Home Page 1', url: '/m-home-page1', icon: 'heart' },
+    { title: 'Material Theme Home Page 2', url: '/mhome2', icon: 'heart' },
     { title: 'Fruit App Details Page', url: '/detail', icon: 'heart' },
     { title: 'Fruit App Product List Page 1', url: '/my-orders', icon: 'heart' },
     { title: 'Fruit App Product List Page 2', url: '/favourites', icon: 'heart' },
@@ -55,8 +57,11 @@ export class AppComponent {
     { title: 'Profile 5', url: '/profile5', icon: 'heart' },
     { title: 'Profile 6', url: '/profile6', icon: 'heart' },
     { title: 'Profile 7', url: '/demo3', icon: 'heart' },
-   
+    { title: 'Login Page', url: '/login', icon: 'heart' },
+    { title: 'Home Page', url: '/home', icon: 'heart' },
+    { title: 'Verify Number', url: '/verify-number', icon: 'heart' },
+
   ];
-  
-  constructor() {}
+
+  constructor() { }
 }
