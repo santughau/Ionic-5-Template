@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md" defaultHref="/home2" color="light"></ion-back-button>
+      <ion-title>Material Details</ion-title>
+    </ion-buttons>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <img id="imgId" src="../../../../assets/project/325230/{{bannerImage}}" />
+
+    <div class="imgBox">
+      <div class="thumbnail" *ngFor="let image of photo" (click)="changeImage(image.img)">
+        <img src="../../../../assets/project/100-100/{{image.img}}" />
+      </div>     
+    </div>
+
+    <div class="product">Product <span>$100</span></div>
+
+    <div class="star">
+      <div><ngx-stars [color]="'#3e9186'" [size]="1"></ngx-stars></div>
+      <div><span>420 Reviews</span></div>     
+    </div>
+    <p>Lorem ipsum dolor sit amet, shopping cart adipiscing elit Lorem ipsum dolor sit amet, shopping cart adipiscing elit
+      .</p><hr>
+      <h3>Text Varients</h3>
+      <div class="textVarient">
+        <div class="round"  *ngFor="let item of varient; let i = index" (click)="toggleClass(i)">{{item.varient}}</div>
+      </div>
+      <h3 style="margin-top:20px;">Color Varient</h3>
+
+      <div class="colorVarient">
+        <div class="colorRed"   ></div>
+        <div class="colorYellow"   ></div>
+        <div class="colorOrange"   ></div>
+        <div class="colorPurple"   ></div>
+        <div class="colorBlue"   ></div>
+      </div>
+
+      <div class="buttons">
+          <div class="cart">Add to Cart</div>
+          <div class="favourite">Add to Favourite</div>
+      </div>
+  </div>
+</ion-content>

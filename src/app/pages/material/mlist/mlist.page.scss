@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+ion-toolbar{
+    --background:#3e9186;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    ion-segment-button{
+        --color:white;
+        --color-checked:yellow;
+        --indicator-height:5px;
+    }
+}
+
+ion-content{
+    --background:#eeeff3;
+font-family: 'Poppins', sans-serif;
+   .featureBox{
+        #featureId{
+            margin-top:10px !important;
+            margin-left:20px;
+            span{
+                float:right;
+                margin-right:10px;
+            }
+        }
+
+    .list{
+        height:120px !important;
+        background-color:#fff;
+        margin-left:10px;
+        margin-right:10px;
+        padding:10px;
+        margin-bottom:10px;
+         display: grid;
+         grid-template-columns:120px auto 50px;
+         grid-template-rows:25px auto 25px;
+         grid-gap:2px;
+         .image{
+            grid-column:1/2 ;
+            grid-row:1/-1 ;
+           
+            }
+
+            .product{
+                 grid-column:2/3 ;
+                 grid-row:1/2 ;
+                 font-size: 18px;
+                 font:bold;
+                
+            }
+            .amt{
+            grid-column:3/4;
+            grid-row:1/2 ;            
+            justify-self: end;
+            color:#3e9186;
+         }
+         .description{
+            grid-column:2/3;
+            grid-row:2/3 ;
+            font-size: 13px;
+         }
+         .menu{
+             grid-row:2/3 ;
+             grid-column:3/4;
+             justify-self: end;
+             align-self: center;
+         }
+         .star{
+            grid-column:2/-1;
+              
+         }
+         
+    }
+
+      
+    } 
+
+
+}

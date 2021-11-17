@@ -8,6 +8,9 @@ export class AppComponent {
   public appPages = [
     { title: 'Material Theme Home Page 1', url: '/m-home-page1', icon: 'heart' },
     { title: 'Material Theme Home Page 2', url: '/mhome2', icon: 'heart' },
+    { title: 'Material Theme Home Page 3', url: '/mhome-page3', icon: 'heart' },
+    { title: 'Material Theme Product Details Page', url: '/mdetails', icon: 'heart' },
+    { title: 'Material Theme Product List Page', url: '/mlist', icon: 'heart' },
     { title: 'Fruit App Details Page', url: '/detail', icon: 'heart' },
     { title: 'Fruit App Product List Page 1', url: '/my-orders', icon: 'heart' },
     { title: 'Fruit App Product List Page 2', url: '/favourites', icon: 'heart' },
@@ -50,6 +53,7 @@ export class AppComponent {
     { title: 'Payement 4', url: '/payment4', icon: 'heart' },
     { title: 'Payement 5', url: '/payment5', icon: 'heart' },
     { title: 'Payement 6', url: '/payment6', icon: 'heart' },
+    { title: 'Payment 7', url: '/demo', icon: 'heart' },
     { title: 'Profile 1', url: '/profile1', icon: 'heart' },
     { title: 'Profile 2', url: '/profile2', icon: 'heart' },
     { title: 'Profile 3', url: '/profile3', icon: 'heart' },

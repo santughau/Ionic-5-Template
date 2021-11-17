@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'mhome2',
+    redirectTo: 'mlist',
     pathMatch: 'full'
   },
   {
@@ -222,19 +222,31 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./pages/getfix/home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/getfix/home/home.module').then(m => m.HomePageModule)
   },
   {
     path: 'verify-number',
-    loadChildren: () => import('./pages/getfix/verify-number/verify-number.module').then( m => m.VerifyNumberPageModule)
+    loadChildren: () => import('./pages/getfix/verify-number/verify-number.module').then(m => m.VerifyNumberPageModule)
   },
   {
     path: 'm-home-page1',
-    loadChildren: () => import('./pages/material/m-home-page1/m-home-page1.module').then( m => m.MHomePage1PageModule)
+    loadChildren: () => import('./pages/material/m-home-page1/m-home-page1.module').then(m => m.MHomePage1PageModule)
   },
   {
     path: 'mhome2',
-    loadChildren: () => import('./pages/material/mhome2/mhome2.module').then( m => m.Mhome2PageModule)
+    loadChildren: () => import('./pages/material/mhome2/mhome2.module').then(m => m.Mhome2PageModule)
+  },
+  {
+    path: 'mhome-page3',
+    loadChildren: () => import('./pages/material/mhome-page3/mhome-page3.module').then(m => m.MhomePage3PageModule)
+  },
+  {
+    path: 'mdetails',
+    loadChildren: () => import('./pages/material/mdetails/mdetails.module').then(m => m.MdetailsPageModule)
+  },
+  {
+    path: 'mlist',
+    loadChildren: () => import('./pages/material/mlist/mlist.module').then( m => m.MlistPageModule)
   }
 ];
 

@@ -1,0 +1,123 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button mode="md" defaultHref="/home" color="light"></ion-menu-button>
+      <ion-title>Material List</ion-title>
+
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="showSearchBar()">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar *ngIf="searchbar">
+    <ion-searchbar showCancelButton="focus" cancelButtonText="Custom Cancel"></ion-searchbar>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-segment (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="friends">
+        <ion-label>CATEGORY</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="enemies">
+        <ion-label>CATEGORY</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="ss">
+        <ion-label>CATEGORY</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+
+</ion-header>
+
+<ion-content>
+  <div class="featureBox">
+    <p id="featureId">Products <span> View All</span></p>
+    <div class="list">
+      <div class="image">
+        <img src="../../../../assets/project/100-100/002.jpg" />
+      </div>
+      <div class="product">Product</div>
+      <div class="amt">$100</div>
+      <div class="description">Lorem ipsum dolor sit amet, shopping cart adipiscing elit.</div>
+      <div class="menu">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </div>
+      <div class="star">
+        <ngx-stars [color]="'#3e9186'" [size]="1"></ngx-stars>
+      </div>
+    </div>
+
+    <div class="list">
+      <div class="image">
+        <img src="../../../../assets/project/100-100/004.jpg" />
+      </div>
+      <div class="product">Product</div>
+      <div class="amt">$100</div>
+      <div class="description">Lorem ipsum dolor sit amet, shopping cart adipiscing elit.</div>
+      <div class="menu">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </div>
+      <div class="star">
+        <ngx-stars [color]="'#3e9186'" [size]="1"></ngx-stars>
+      </div>
+    </div>
+
+
+    <div class="list">
+      <div class="image">
+        <img src="../../../../assets/project/100-100/005.jpg" />
+      </div>
+      <div class="product">Product</div>
+      <div class="amt">$100</div>
+      <div class="description">Lorem ipsum dolor sit amet, shopping cart adipiscing elit.</div>
+      <div class="menu">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </div>
+      <div class="star">
+        <ngx-stars [color]="'#3e9186'" [size]="1"></ngx-stars>
+      </div>
+    </div>
+
+
+
+    <div class="list">
+      <div class="image">
+        <img src="../../../../assets/project/100-100/006.jpg" />
+      </div>
+      <div class="product">Product</div>
+      <div class="amt">$100</div>
+      <div class="description">Lorem ipsum dolor sit amet, shopping cart adipiscing elit.</div>
+      <div class="menu">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </div>
+      <div class="star">
+        <ngx-stars [color]="'#3e9186'" [size]="1"></ngx-stars>
+      </div>
+    </div>
+
+
+    <div class="list">
+      <div class="image">
+        <img src="../../../../assets/project/100-100/007.jpg" />
+      </div>
+      <div class="product">Product</div>
+      <div class="amt">$100</div>
+      <div class="description">Lorem ipsum dolor sit amet, shopping cart adipiscing elit.</div>
+      <div class="menu">
+        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      </div>
+      <div class="star">
+        <ngx-stars [color]="'#3e9186'" [size]="1"></ngx-stars>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>

@@ -1,0 +1,141 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button mode="md" defaultHref="/home" color="light"></ion-menu-button>
+      <ion-title>Material Store</ion-title>
+
+    </ion-buttons>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="showSearchBar()">
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar *ngIf="searchbar">
+    <ion-searchbar showCancelButton="focus" cancelButtonText="Custom Cancel"></ion-searchbar>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-segment (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="friends">
+        <ion-label>CATEGORY</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="enemies">
+        <ion-label>CATEGORY</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="ss">
+        <ion-label>CATEGORY</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+
+</ion-header>
+
+<ion-content>
+  <div class="featureBox">
+    <p id="featureId">Products <span> View All</span></p>
+    <div id="firstBox">
+      <div class="featureImg">
+        <img src="../../../../assets/project/156-156/007.jpg" />
+        <p id="product">Product </p>
+        <h6>Lorem ipsum dolor sit amet, shopping cart adipiscing elit.</h6>
+        <div class="star">
+          <div class="price">
+            $100
+          </div>
+          <div class="icon">
+            <ion-buttons slot="secondary">
+              <ion-button>
+                <ion-icon name="cart-outline"></ion-icon>
+              </ion-button>
+              <ion-button (click)="changeIcon()">
+                <ion-icon [name]="showIcon ? 'heart-outline' : 'heart'" color="danger"></ion-icon>
+              </ion-button>
+              <ion-button>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="featureImg">
+        <img src="../../../../assets/project/156-156/005.jpg" />
+        <p id="product">Product </p>
+        <h6>Lorem ipsum dolor sit amet, shopping cart adipiscing elit.</h6>
+        <div class="star">
+          <div class="price">
+            $100
+          </div>
+          <div class="icon">
+            <ion-buttons slot="secondary">
+              <ion-button>
+                <ion-icon name="cart-outline"></ion-icon>
+              </ion-button>
+              <ion-button (click)="changeIcon()">
+                <ion-icon [name]="showIcon ? 'heart-outline' : 'heart'" color="danger"></ion-icon>
+              </ion-button>
+              <ion-button>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </div>
+      
+        </div>
+      </div>
+
+    </div>
+
+    <p id="featureId">Categories <span> View All</span></p>
+    <div class="category">
+      <div class="box">
+        <img src="../../../../assets/project/100-100/002.jpg" />
+        <p>Product</p>
+        <h6>$100 <span>
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+          </span></h6>
+      </div>
+      <div class="box">
+        <img src="../../../../assets/project/100-100/004.jpg" />
+        <p>Product</p>
+        <h6>$100 <span>
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+          </span></h6>
+      </div>
+      <div class="box">
+        <img src="../../../../assets/project/100-100/005.jpg" />
+        <p>Product</p>
+        <h6>$100 <span>
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+          </span></h6>
+      </div>
+      <div class="box">
+        <img src="../../../../assets/project/100-100/006.jpg" />
+        <p>Product</p>
+        <h6>$100 <span>
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+          </span></h6>
+      </div>
+      <div class="box">
+        <img src="../../../../assets/project/100-100/007.jpg" />
+        <p>Product</p>
+        <h6>$100 <span>
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+          </span></h6>
+      </div>
+      <div class="box">
+        <img src="../../../../assets/project/100-100/008.jpg" />
+        <p>Product</p>
+        <h6>$100 <span>
+            <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+          </span></h6>
+      </div>
+    </div>
+  </div>
+</ion-content>
